@@ -636,8 +636,35 @@ Congrats! You have finished your first Rails API that can handle full CRUD funct
 
 ## Checks for Understanding
 
-1. Define CRUD.
-1. Define MVC.
-1. What two files would you need to create/modify for a Rails application to respond to a GET request to /api/v1/tasks, assuming you have a Task model.
-1. What are params? Where do they come from?
-1. What is the purpose of a serializer?
+* Define CRUD.
+- CRUD stands for Create, Read, Update, and Delete. 
+- Create: Adding new records to the database.
+- Read: Retrieving and viewing existing records.
+- Update: Modifying existing records.
+- Delete: Removing records from the database.
+
+* Define MVC
+- MVC stands for Model-View-Controller, which is a design pattern used to separate concerns in web applications:
+- Model: Represents the data and business logic.
+- View: Represents the presentation layer. It generates the user interface
+- Controller: Handles user input, interacts with the model to retrieve or modify data, and selects the appropriate view to present the results
+
+* What two files would you need to create/modify for a Rails application to respond to a GET request to /api/v1/tasks, assuming you have a Task model.
+- Controller File: File Path: app/controllers/api/v1/tasks_controller.rb
+- Route File: File Path: config/routes.rb
+
+* What Are Params? Where do they come from?
+- Params: Short for parameters, these are the data sent with a request. In Rails, params is a method that provides access to this data. Parameters can come from various sources such as query strings, form submissions, or URL segments.
+
+* What is the purpose of a Serializer?
+- Serializer: In a Rails application, a serializer is used to define how objects are converted into a JSON format (or other formats) when sending data over an API.
+
+- Format Data: It controls which attributes are included in the response and how they are structured.
+- Custom Representation: Allows you to customize the JSON response to fit the needs of the API consumers, including nested associations, computed values, etc.
+- Consistency: Ensures a consistent format for API responses.
+
+
+
+
+
+
